@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#grid {
+    background-color: black;
+    width: 90vh; height: 90vh;
+    border: 1vh solid red;
+}
