@@ -56,8 +56,6 @@ function check_neighbors(x, y) {
         i[1] > size-1? i[1] = 0 : i[1];
         if (grid[i[0]][i[1]] == 1) count++;
     });
-    if (x==0&&y==1)
-    console.log(count)
     switch(count) {
         case 2: return grid[x][y];
         case 3: return 1;
