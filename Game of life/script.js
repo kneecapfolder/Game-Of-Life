@@ -1,7 +1,7 @@
 // init
 const CANVAS = document.getElementById("grid");
 const ctx = CANVAS.getContext("2d");
-let size = 100;
+let size = 80;
 let grid;
 let nextGrid
 
@@ -21,7 +21,7 @@ function draw() {
     for(let x = 0; x < size; x++)
         for(let y = 0; y < size; y++) 
             if (grid[x][y] == 1)
-            ctx.fillRect(x*cellSize, y*cellSize, cellSize, cellSize);
+            ctx.fillRect(x*cellSize+1, y*cellSize+1, cellSize-2, cellSize-2);
 }
 
 function update() {
