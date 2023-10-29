@@ -9,5 +9,5 @@ body {
 #grid {
     background-color: black;
     width: 90vh; height: 90vh;
-    border: 1vh solid red;
+    border: .25vh solid red;
 }
