@@ -40,16 +40,16 @@ function next_gen() {
     for(let x = 0; x < size; x++) {
         nextGrid.push(new Array(size));
         for(let y = 0; y < size; y++) {
-            nextGrid[x][y] = check_neighbors(x, y);
+            nextGrid[x][y] = check_neighbours(x, y);
         }
     }
 }
 
-function check_neighbors(x, y) {
-    let neighborList = [[x-1,y-1],[x,y-1],[x+1,y-1],[x-1,y],[x+1,y],[x-1,y+1],[x,y+1],[x+1,y+1]];
+function check_neighbours(x, y) {
+    let neighbourList = [[x-1,y-1],[x,y-1],[x+1,y-1],[x-1,y],[x+1,y],[x-1,y+1],[x,y+1],[x+1,y+1]];
     
     let count = 0;
-    neighborList.forEach(i => {
+    neighbourList.forEach(i => {
         i[0] < 0? i[0] = size-1 : i[0];
         i[0] > size-1? i[0] = 0 : i[0];
         i[1] < 0? i[1] = size-1 : i[1];
